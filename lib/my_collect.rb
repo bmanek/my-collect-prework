@@ -2,8 +2,7 @@ def my_collect(list)
   new_list = []
   i = 0
   while i < list.length
-    yield(list[i])
-    new_list << list[i]
+    new_list << yield(list[i])
     i += 1
   end
   new_list
